@@ -5,13 +5,13 @@ import Input from "../../UI/Input";
 import classes from "./MealItemForm.module.css";
 
 const MealItemForm = (props) => {
-  const submitHandler = (event) => {
-    event.preventDefault();
-    console.log(`The ${props.id} form was submitted!!!`)
-  };
+  // const submitHandler = (event) => {
+  //   event.preventDefault();
+  //   console.log(`The ${props.id} form was submitted!!!`)
+  // };
 
   return (
-    <form ac={submitHandler}  className={classes.form}>
+    <form className={classes.form}>
       <Input
         id={props.id}
         value={1}
