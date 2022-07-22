@@ -6,6 +6,7 @@ import ModalOverlay from "./ModalOverlay";
 
 const Modal = (props) => {
   const portalElement = document.querySelector("#modal-root");
+  // const portalElement = document.getElementById("modal-root");
 
   return (
     <Fragment>
@@ -15,7 +16,8 @@ const Modal = (props) => {
       )}
       {ReactDOM.createPortal(
         <ModalOverlay 
-          
+          header={"React Meals Cart"} 
+          footer={"Thank you for your business"}
         >
           {props.children}
         </ModalOverlay>,
@@ -27,5 +29,5 @@ const Modal = (props) => {
 };
 
 export default Modal;
-// header={props.header} 
-// footer={props.footer}
+// // 
+// // 
